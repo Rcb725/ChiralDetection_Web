@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ChiralDetection</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Chiral Detection</div>
+            <div class="nav-container">
+                <nav>
+                    <a href="javascript:void(0);" onclick="showSection(1,0,0)">功能介绍</a>
+                </nav>
+                <nav>
+                    <a href="javascript:void(0);" onclick="showSection(0,1,0)">图像分析</a>
+                </nav>
+                <nav>
+                    <a href="javascript:void(0);" onclick="showSection(0,0,1)">关于我们</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>分子手性检测</h1>
+            </div>
+        </section>
+
+        <section id="features" class="section active"><!--此部分图片和文字根据需要修改-->
+            <h2>功能介绍</h2>
+            <div class="feature">
+                <img src="https://via.placeholder.com/150" alt="功能 1" style="border-radius: 10px">
+                <h3>智能检测</h3>
+                <p>【此处可以添加具体说明】</p>
+            </div>
+            <div class="feature">
+                <img src="https://via.placeholder.com/150" alt="功能 2" style="border-radius: 10px">
+                <h3>手性分析</h3>
+                <p>【此处可以添加具体说明】</p>
+            </div>
+            <div class="feature">
+                <img src="https://via.placeholder.com/150" alt="功能 3" style="border-radius: 10px">
+                <h3>自动标注</h3>
+                <p>【此处可以添加具体说明】</p>
+            </div>
+            <div class="feature">
+                <img src="https://via.placeholder.com/150" alt="功能 4" style="border-radius: 10px">
+                <h3>类别计数</h3>
+                <p>【此处可以添加具体说明】</p>
+            </div>
+        </section>
+
+        <section id="upload" class="sectionf">
+            <div id="uploadArea">
+                <h2>上传图像</h2>
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <input type="file" id="imageUpload" name="image" accept="image/*" style="display: none;">
+                    <button type="button" id="select" class="btn-upload" onclick="uploadImage()" style="display: inline-block;">选择图片</button>
+                    <button type="button" id="reset" class="btn-upload" onclick="resetImage()" style="display: none;">重新选择</button>
+                    <button type="button" id="detect" class="btn-upload" style="display: none;">开始检测</button>
+                    <button type="button" id="ana" class="btn-upload" style="display: none;">手性分析</button>
+                    <button type="button" id="auto_annotation" class="btn-upload" style="display: none;">自动标注</button>
+                    <button type="button" id="count" class="btn-upload" style="display: none;">类别计数</button>
+                    <p id="isSelected" class="section">已选择图片，准备检测</p>
+                    <p id="errorMessage" class="section"></p>
+                </form>    
+            </div>
+            <div id="uploadDivider"></div>
+            <div id="result"></div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="about">
+                <h2>关于我们</h2>
+                <p><!--介绍和邮箱根据需要删改-->
+                    【此处可以填名字/单位/学校/机构等，或不填】 | 
+                    <span>邮箱：</span> | 
+                    <a href="https://github.com/liujian1040/ChiralDetection" target="_blank">Github</a>
+                </p>
+            </div>
+            
+        </section>
+
+        <footer>
+            <p>&copy; AI分子检测 | 让化学更简单</p>
+        </footer>
+
+        
+    </body>
+</html>

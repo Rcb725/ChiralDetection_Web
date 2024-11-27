@@ -1,0 +1,180 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0024f3bb;
+    color: white;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-container {
+    display: flex;
+    width:27vw;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/background_image.jpg') no-repeat center center/cover;
+    opacity: 0.3;  /* 设置背景图片的透明度为 40% */
+    z-index: -1;   /* 让伪元素在文本后面 */
+}
+
+.hero h1 {
+    color: rgba(0, 0, 0);
+    font-size: 60px;
+    margin: 0;
+}
+
+.section {
+    display: none;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section.active {
+    display: block;
+    background-color: #f4f7fb;
+}
+
+.sectionf {
+    display: none;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sectionf.active {
+    display: flex;
+    background-color: #f4f7fb;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.feature {
+    display: inline-block;
+    width: 20vw;
+    padding: 10px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.feature img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
+}
+
+.btn-upload {
+    background-color: #00c6ff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-upload:hover {
+    background-color: #0086d1;
+}
+
+.about a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 上传部分布局 */
+#upload {
+    justify-content: space-between;
+    align-items: center;
+    min-height: 55vh;
+}
+
+/* 左侧：上传图片表单 */
+#uploadArea {
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    min-height: 55vh;
+    padding-left: 10vh;
+    width:35vh;
+}
+
+/* 右侧：结果图片展示 */
+#result {
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* 使图片内容水平居中 */
+    min-height: 55vh;
+    padding-right: 10vh;
+    width:35vh;
+}
+
+/* 分割线样式 */
+#uploadDivider {
+    width: 2px;
+    background-color: #dddddd;
+    height: 55vh;
+    margin: 0 20px;
+}
