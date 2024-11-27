@@ -8,7 +8,6 @@
 
 4. py文件夹中为开发时临时编写的python文件，供对应的php调用测试，可删除
 
-5. 运行环境配置：
-    · 开发环境为phpstudy 8.1.1.3提供的Apache 2.4.39
-    · phpstudy官网：https://www.xp.cn/php-study
-    · 配置好Apache环境后，将本项目的cdw文件夹置于localhost路径下，即可访问网站首页http://localhost/cdw/index.html
+5. 运行环境配置：开发环境为phpstudy 8.1.1.3提供的Apache 2.4.39；phpstudy官网：https://www.xp.cn/php-study
+
+6. 配置好Apache环境后，将本项目的cdw文件夹置于localhost路径下，即可访问网站首页http://localhost/cdw/index.html
